@@ -1,0 +1,9 @@
+.btn-phone{
+    @include styleButton($color-main-1, 15px, 20.5px, $bd-1, 50px, $ls-1,$color-white-1);
+    transition: .3s;
+    font-weight: $fw-1;
+    &:hover{
+        @include styleButtonHover($color-white-1,$color-main-1,$color-main-1);
+        border: solid $bd-1;
+    }
+}

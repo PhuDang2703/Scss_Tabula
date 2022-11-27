@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+  color: #181818;
+  background-color: #fff;
+}
+
+.section {
+  padding: 4em 0;
+}
+
+.section-title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #191919;
+  letter-spacing: 0.015rem;
+}
+
+.btn-phone {
+  background: #b61984;
+  padding: 15px 20.5px;
+  border: 1px;
+  border-radius: 50px;
+  letter-spacing: 0.015rem;
+  color: #fff;
+  transition: 0.3s;
+  font-weight: 400;
+}
+.btn-phone:hover {
+  background: #fff;
+  border-color: #b61984;
+  color: #b61984;
+  border: solid 1px;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-image: url(../../img/yellow_top_wave_01.png);
+}
+header .navbar {
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+  padding: 0 1rem;
+}
+header #navbarNav {
+  margin: auto;
+  padding: 0 30px;
+}
+header .navbar-toggler-icon {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: #181818;
+}
+header .navbar-nav .nav-link {
+  font-size: 13px;
+  font-weight: 600;
+  color: #181818;
+  padding: 0 50px 0 0;
+  transition: 0.3s;
+}
+header .navbar-nav .nav-link:hover {
+  color: #b61984;
+}
+
+.carousel_left {
+  font-size: 57px;
+  font-weight: 700;
+  color: #191919;
+}/*# sourceMappingURL=main.css.map */

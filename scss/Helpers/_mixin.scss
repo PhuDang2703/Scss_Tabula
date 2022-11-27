@@ -1,0 +1,33 @@
+@mixin styleText($fs,$fw,$color) {
+    font-size:$fs ;
+    font-weight:$fw ;
+    color:$color ;
+}
+
+@mixin styleButton($bg,$pd-y,$pd-x,$bd, $radius,$ls,$color) {
+    background: $bg;
+    padding: $pd-y $pd-x;
+    border: $bd;
+    border-radius: $radius;
+    letter-spacing: $ls;
+    color: $color;
+}
+
+@mixin styleButtonHover($bg,$bd-color,$color) {
+    background: $bg;
+    border-color: $bd-color;
+    color: $color;
+}
+
+//breakpoint là 1 biến mảng với từng cặp key: value, và để sử dụng được biến mảng đó, ta sẽ thông qua hàm map-get($map, $key) → thì sẽ tự động trả về giá trị value.
+@mixin responsive($screen) {   
+    @if(map-has-key($map:$breakpoints , $key:$screen )){      
+        $value: map-get($map:$breakpoints , $key:$screen );       
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    @else{       
+        @warn "màn hình chưa khai báo";
+    }
+}
