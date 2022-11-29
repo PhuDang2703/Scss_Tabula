@@ -16,6 +16,6 @@ html,body{
 .section-title{
     margin-bottom: $mg-3;
     text-align: center;
-    @include styleText($fs-6,$fw-3,$color-dark-2);
+    @include styleText($fs-4,$fw-3,$color-dark-2);
     letter-spacing: $ls-1;
 }

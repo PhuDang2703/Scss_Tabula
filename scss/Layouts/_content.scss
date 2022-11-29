@@ -1,3 +1,90 @@
-.carousel_left{
-    @include styleText(57px, $fw-3, $color-dark-2);
+.carousel {
+    padding: 60px 0;
+    background-image: url(../../img/Violet_top_left_wave.png);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    .carousel_left {
+        padding-top: 200px;
+    }
+
+    h1 {
+        @include styleText(57px, $fw-3, $color-dark-2)
+    }
+
+    h3 {
+        @include styleText(16.5px, $fw-2, $color-main-1);
+        margin: 0 0 8.25px;
+    }
+}
+
+.teaching {
+    padding-top: $pd-2;
+    background-image: url(../../img/Wave_White_bottom_right_shape_01.png);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-color: rgb(163 154 163 / 41%);
+
+    .teacher {
+        background-color: $color-white-1;
+
+        img {
+            width: 250px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 23.25px;
+            font-weight: $fw-3;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p:first-of-type {
+            @include styleText(11.25px, $fw-2, $color-main-1);
+            text-align: center;
+            margin: 0 0 8px;
+        }
+
+        p:last-of-type {
+            @include styleText(15px, $fw-1, $color-dark-2);
+            text-align: center;
+            margin: 0 0 8px;
+        }
+    }
+
+    .teacher_bot {
+        margin-top: 40px;
+    }
+}
+
+.findcourse {
+    padding-top: 60px;
+    background-image: url(../../img/accent_bottom_wave_01.png);
+    background-position: center;
+    background-size: cover;
+    .findcourse_left {
+        img {
+            height: 500px;
+            padding: 0 $pd-4;
+        }
+    }
+
+    // .findcourse_right {
+        
+    // }
+}
+
+.footer{
+    padding: 120px 0;
+    background-image: url(../../img/footer_background.jpg);
+    background-position: center;
+    background-size: cover;
+.footer_1{
+    h3{
+        @include styleText(23.25px, $fw-3, $color-white-1);
+    }
+}
 }

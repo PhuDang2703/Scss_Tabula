@@ -6,7 +6,7 @@
 
 html, body {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.1em;
   font-weight: 400;
   color: #181818;
   background-color: #fff;
@@ -42,13 +42,30 @@ html, body {
   border: solid 1px;
 }
 
+.btn-send {
+  background: #b61984;
+  padding: 15px 60px;
+  border: 1px;
+  border-radius: 50px;
+  letter-spacing: 0.015rem;
+  color: #fff;
+  transition: 0.3s;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+.btn-send:hover {
+  background: #fff;
+  border-color: #b61984;
+  color: #b61984;
+  border: solid 1px;
+}
+
 header {
   background-color: #fff;
   box-shadow: 0 2px 4px #fff;
   position: fixed;
   width: 100%;
   z-index: 10;
-  background-image: url(../../img/yellow_top_wave_01.png);
 }
 header .navbar {
   font-size: 13px;
@@ -57,8 +74,16 @@ header .navbar {
   padding: 0 1rem;
 }
 header #navbarNav {
-  margin: auto;
   padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+}
+header #navbarNav img {
+  width: 80px;
+}
+header .btn-call i {
+  font-size: 1.1em;
+  margin-left: 8px;
 }
 header .navbar-toggler-icon {
   font-size: 1.6rem;
@@ -76,8 +101,87 @@ header .navbar-nav .nav-link:hover {
   color: #b61984;
 }
 
-.carousel_left {
+.carousel {
+  padding: 60px 0;
+  background-image: url(../../img/Violet_top_left_wave.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.carousel .carousel_left {
+  padding-top: 200px;
+}
+.carousel h1 {
   font-size: 57px;
   font-weight: 700;
   color: #191919;
+}
+.carousel h3 {
+  font-size: 16.5px;
+  font-weight: 600;
+  color: #b61984;
+  margin: 0 0 8.25px;
+}
+
+.teaching {
+  padding-top: 30px;
+  background-image: url(../../img/Wave_White_bottom_right_shape_01.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-color: rgba(163, 154, 163, 0.41);
+}
+.teaching .teacher {
+  background-color: #fff;
+}
+.teaching .teacher img {
+  width: 250px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.teaching .teacher h3 {
+  font-size: 23.25px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.teaching .teacher p:first-of-type {
+  font-size: 11.25px;
+  font-weight: 600;
+  color: #b61984;
+  text-align: center;
+  margin: 0 0 8px;
+}
+.teaching .teacher p:last-of-type {
+  font-size: 15px;
+  font-weight: 400;
+  color: #191919;
+  text-align: center;
+  margin: 0 0 8px;
+}
+.teaching .teacher_bot {
+  margin-top: 40px;
+}
+
+.findcourse {
+  padding-top: 60px;
+  background-image: url(../../img/accent_bottom_wave_01.png);
+  background-position: center;
+  background-size: cover;
+}
+.findcourse .findcourse_left img {
+  height: 500px;
+  padding: 0 20px;
+}
+
+.footer {
+  padding: 120px 0;
+  background-image: url(../../img/footer_background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.footer .footer_1 h3 {
+  font-size: 23.25px;
+  font-weight: 700;
+  color: #fff;
 }/*# sourceMappingURL=main.css.map */

@@ -25,11 +25,12 @@
 <body>
   <header>
     <div class="header">
+      <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <img class="navbar-brand" src="./img/crest.png" alt="">
           <ul class="navbar-nav">
@@ -65,10 +66,13 @@
         </div>
       </nav>
     </div>
+    </div>
   </header>
 
   <!-- Carousel -->
-  <section class="carousel row">
+  <section class="carousel">
+    <div class="container">
+    <div class="row">
     <div class="carousel_left col-6">
       <h3>ABOUT US</h3>
       <h1>The language teaching experts</h1>
@@ -76,19 +80,131 @@
     <div class="carousel_right col-6">
       <img src="./img/hero_team.png" alt="">
     </div>
-  </section>
+  </div>
+</div>
+</section>
 
   <!-- Teacher -->
-  <section class="teacher">
+  <section class="teaching">
     <div class="container">
-      <div class="teacher_on">
-        
+      <div class="teacher_on row">
+        <div class="teacher col-3">
+          <img src="./img/teacher_1.jpg" alt="">
+          <p>ITALIAN</p>
+          <h3>July Roberts</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="teacher col-3">
+          <img src="./img/teacher_2.jpg" alt="">
+          <p>FRENCH</p>
+          <h3>JONE STONE</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="teacher col-3">
+          <img src="./img/teacher_3.jpg" alt="">
+          <p>JAPANESE</p>
+          <h3>Emma Stone</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="teacher col-3">
+          <img src="./img/teacher_4.jpg" alt="">
+          <p>CHINESE</p>
+          <h3>Mark Lee</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
       </div>
-      <div class="teacher_bot"></div>
+      <div class="teacher_bot row">
+          <div class="teacher col-3">
+            <img src="./img/teacher_5.jpg" alt="">
+            <p>RUSSIAN</p>
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="teacher col-3">
+            <img src="./img/teacher_6.jpg" alt="">
+            <p>SWEDEN</p>
+            <h3>Jane Smith</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="teacher col-3">
+            <img src="./img/teacher_7.jpg" alt="">
+            <p>SPANISH</p>
+            <h3>Hanna Alverez</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="teacher col-3">
+            <img src="./img/teacher_8.jpg" alt="">
+            <p>ITALIAN</p>
+            <h3>Julie Roberts</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+      </div>
     </div>
   </section>
 
+  <!-- Find your course -->
+  <section class="findcourse">
+    <div class="container">
+      <div class="row">
+    <div class="findcourse_left col-md-6">
+      <img src="./img/conatct_inner.png" alt="">
+    </div>
+    <div class="findcourse_right col-md-6">
+      <h1 style="text-align: center;"><b>Find Your Course</b></h1>
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <i class="fa fa-user"></i>
+            <label for="inputEmail4">Name</label>
+            <input type="text" class="form-control" placeholder="Name" id="inputName">
+          </div>
+          <div class="form-group col-md-6">
+            <i class="fa fa-envelope"></i>
+            <label for="inputPassword4">Email</label>
+            <input type="email" class="form-control" placeholder=" Email" id="inputEmail">
+          </div>
+        </div>
+        <div class="form-group">
+          <i class="fa fa-graduation-cap"></i>
+          <label for="exampleFormControlSelect1">English</label>
+          <select class="form-control" placeholder="English" id="inputEnglish">
+            <option>English</option>
+            <option>French</option>
+            <option>Spanish</option>
+            <option>Germany</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <i class="fa fa-comment-alt"></i>
+          <label for="exampleFormControlTextarea1">Message</label>
+          <textarea class="form-control" placeholder="Message" id="inputMessage" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn-send">Send</button>
+      </form>
+    </div>
+  </div>
+  </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer_1 col-md-3">
+          <h3>Contact us</h3>
+        </div>
+        <div class="footer_1 col-md-3">
+          <h3>Quick links</h3>
+        </div>
+        <div class="footer_1 col-md-3">
+          <h3>About</h3>
+        </div>
+        <div class="footer_1 col-md-3">
+          <h3>Newsletter</h3>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

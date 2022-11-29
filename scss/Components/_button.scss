@@ -1,9 +1,22 @@
-.btn-phone{
-    @include styleButton($color-main-1, 15px, 20.5px, $bd-1, 50px, $ls-1,$color-white-1);
+.btn-phone {
+    @include styleButton($color-main-1, 15px, 20.5px, $bd-1, 50px, $ls-1, $color-white-1);
     transition: .3s;
     font-weight: $fw-1;
-    &:hover{
-        @include styleButtonHover($color-white-1,$color-main-1,$color-main-1);
+
+    &:hover {
+        @include styleButtonHover($color-white-1, $color-main-1, $color-main-1);
+        border: solid $bd-1;
+    }
+}
+
+.btn-send {
+    @include styleButton ($color-main-1, 15px, 60px, $bd-1, 50px, $ls-1, $color-white-1);
+    transition: .3s;
+    font-weight: $fw-2;
+    font-size: 0.8em;
+
+    &:hover {
+        @include styleButtonHover($color-white-1, $color-main-1, $color-main-1);
         border: solid $bd-1;
     }
 }

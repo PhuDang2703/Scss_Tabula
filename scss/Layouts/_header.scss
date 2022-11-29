@@ -4,30 +4,43 @@ header {
     position: fixed;
     width: 100%;
     z-index: 10;
-    background-image: url(../../img/yellow_top_wave_01.png);
-    .navbar{
+
+    .navbar {
         @include styleText($fs-3, $fw-2, $color-dark-1);
         padding: 0 1rem;
     }
-    #navbarNav{
-        margin: auto;
+
+    #navbarNav {
         padding: 0 $pd-2;
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 80px;
+        }
     }
-    .navbar-toggler-icon{
+
+    .btn-call {
+        i {
+            font-size: $fs-1;
+            margin-left: 8px;
+        }
+    }
+
+    .navbar-toggler-icon {
         font-size: $fs-5;
         line-height: 1.5em;
         color: $color-dark-1;
     }
+
     .navbar-nav {
         .nav-link {
             @include styleText($fs-3, $fw-2, $color-dark-1);
             padding: 0 $pd-3 0 0;
             transition: 0.3s;
+
             &:hover {
                 color: $color-main-1;
             }
         }
     }
 }
-
-
